@@ -1,0 +1,30 @@
+import mayflower.*;
+
+public class GamePlayScreen1
+{
+    private String [][] tiles;
+    public GamePlayScreen1() 
+    {
+        tiles=new String [5][10];
+        Mayflower.showBounds(false);
+    }
+
+    public void act()
+    {
+    }
+
+    public void buildWorld()
+    {
+        for(int i=0;i<tiles.length;i++)
+        {
+            for(int j=0;j<tiles[0].length;j++)
+            {
+                tiles [i][j]="";
+            }
+        }
+    }
+    public void display()
+    {
+        System.out.print("Build Gameplay Screen 1");
+    }
+}
